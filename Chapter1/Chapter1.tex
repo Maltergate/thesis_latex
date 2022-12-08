@@ -1,0 +1,52 @@
+\chapter{Introduction}
+\label{cha:intro}
+
+%------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
+\section{Space Debris}
+\label{intro:space_debris}
+% Introduction of the space debris problem
+Since the launch of the first artificial satellite, Sputnik 1, by the USSR in 1957, human activities in space never ceased to grow. With only 3 satellites launched to \Gls{geo} in 1970, 2015 alone was the year of 35 new satellites into the same \gls{geo}. When it comes to the \Gls{leo}, those numbers are even more striking as we ramp up from 100 satellites launches in 1970 to over 400 in 2018. While the number of satellites put on that orbit remained quite steady with a mean of roughly 70 satellites per year, 2010 was the beginning of the so-called \emph{New-Space} movement where space activities gradually shifted from a government and big companies niche towards being more affordable for smallest companies and universities. \gls{leo} missions took advantage of the introduction of \Gls{cots} and new launches services such as \emph{SpaceX}, \emph{Rocket Lab} or directly from the \Gls{iss} which, once combined, drastically decrease the building and launching cost of a satellite. \gls{geo} on its side remains the preserve of the big historical constructors and operators because of its very particular use and constraints which makes it very costly. \Gls{roi} of such missions (mainly telecommunications) makes it very attractive, explaining the growing number of launched payload each year.
+
+
+%   Three ways of dealing with it: Keeping track for manipulations, EOL, Active debris removal
+Space Debris problem can be tackled in three ways:
+\begin{itemize}
+    \item \textbf{Cataloguing and tracking}: through a thorough observation via radars and telescope a catalogue of known debris is created with their estimated orbital parameters. Their orbits can then be propagated and when a collision risk is detected, then a manoeuvre can be performed to maintain the spacecraft's integrity and mission.
+    \item \textbf{End of life guidelines}: space agencies around the world integrated as a guideline the re-entry of \gls{leo} satellites no later than 25 years after decommission. When arriving at its end of life, the satellite must then perform some manoeuvre and actions (such as passivation) to enable a safe, passive re-entry in the allowed timescale. \emph{Surrey Space Centre} pioneered the use of a drag-sail to considerably reduce the reentry time-frame of their technology demonstrator mission \emph{Remove Debris} without using any propulsion device \citep{forshaw_removedebris:_2016}. \gls{geo} requires a manoeuvre towards a graveyard orbit 300km higher than nominal orbit. However, those guidelines have a cost for spacecraft manufacturers and operators, adding weight, fuel or component to the spacecraft, which makes them rarely applied in the commercial world. Since 2008, the French Space Operations Act enforces the application of those end of life guidelines for every satellite that is partly or entirely manufactured, operated or launched by a French company.
+    \item \textbf{\gls{adr}}: mitigating debris creation through the extensive use and application will still leave room for risks from actual debris. Furthermore, with the kilo-constellation projects such as \emph{SpaceX} or \emph{One Web}, \gls{adr} missions will soon become necessary to ensure sustainable use of space and keeping the collision risk as low as possible. \emph{Remove Debris} mission from \emph{Surrey Space Centre} investigated and tested the use a net and a harpoon to such an end.
+\end{itemize}
+
+
+\gls{adr} mission can be decomposed in several steps. First, specific debris from the catalogue has to be chosen to get rid off. Knowledge of this debris can be various depending on its nature (fully known decommissioned satellite or piece of a rocket body explosion). As stated above, we will make here no assumption on prior knowledge of the debris except on its estimated orbital elements from the space debris catalogue (thus enabling propagation of its orbital state and, in fine, a rendezvous manoeuvre to its vicinity). Then the observation phase takes place where the chaser manoeuvre actively or passively (thanks to relative orbital mechanics) around the target (debris) to take measurements, followed by the active capture phase. Finally, the chaser moves the target either to re-entry or graveyard orbit. 
+%A conceptual graph of mission phases can be found in fig. \ref{fig:adr_phases}. 
+%\todo{Make a graph of the different phases}
+
+Proximity operations of phases 2 and 3 are highly risked as any substantial error in the estimation or control could lead to a collision between the chaser and the target leading to a potential loss of the mission upon creating new debris. The scientific community tried to alleviate this problem by introducing \emph{relative navigation} and more especially \gls{vbn}. In case of a grasping or docking scenario of the chaser to the target, furthermore computations are required to estimate the shape and kinematic properties of the latter to decide \emph{where} and \emph{how} the chaser will dock/grasp.
+
+% The state of computers in space
+Those estimation and control problems can find an echo into the terrestrial robotic and aeronautical community where they already are partially or fully solved. However, space remains an outer and challenging domain with its own and very specific constraints. Above all is the harsh environment which makes ground computers often irrelevant for space applications. Radiation levels involved makes radiation-hardened hardware required to withstand \gls{see}. This can be done by additional shielding, robust computing design (monitoring with separate code, vote scheme, re-computation), robust hardware architecture etc. All those constraints lead to an immense gap between computing power available on-ground compared to the one available on-board of a spacecraft. The latest development in LEON processors, Europe's space computers flagship, is the quad-core GR740 clocked at roughly 250MHz \citep{staff_space-grade_2019}. The harsh environment also imposes many poor measurement conditions such as harsh lighting conditions where the dynamic range of a camera can't keep up with sun illumination in the background, or simply having no illumination during the night phase. LiDAR measurements as well can be error-prone due to the reflective nature of the \gls{mli} of other materials used on the object.
+% The risk in space that has to be very small.
+%   Decrease the risk of space missions in general
+%   Have an ADR mission that is as less risky as possible
+
+%------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
+\section{Autonomous navigation around and unknown target}
+\label{intro:autonomous_navigation}
+
+%------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
+\section{Research aims and Objectives}
+\label{intro:research_aims}
+
+%------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
+\section{Conferences, Workshops and Publications}
+\label{intro:papers}
+
+%------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
+\section{Outline of the thesis}
+\label{intro:outline}
+
